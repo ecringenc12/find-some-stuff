@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main() {
+	char yaz[399];
+	printf("birsey yaz-> ");
+	gets(yaz);
+	int i;
+	int tut=0;
+	int al=0;
+	int sayac=0;
+	for(i=0;i<strlen(yaz);i++)
+	{
+		sayac=sayac+1;
+	}
+	printf("Karakter sayisi-> %d\n",sayac);
+	for(i=0;i<strlen(yaz);i++)
+	{
+		if(yaz[i]==' ')
+		{
+			tut=tut+1;
+		}
+	}
+	printf("Kelime sayisi-> %d\n",tut+1);
+	for(i=0;i<strlen(yaz);i++)
+	{
+		if(yaz[i]=='a' || yaz[i]=='e' || yaz[i]=='i' || yaz[i]=='u' || yaz[i]=='o' || yaz[i]=='A' || yaz[i]=='E' || yaz[i]=='I' || yaz[i]=='U' || yaz[i]=='O')
+		{
+			al=al+1;
+		}
+	}
+	printf("Yazida gecen sesli harf sayisi-> %d",al);
+	
+
+	
+	return 0;
+}
